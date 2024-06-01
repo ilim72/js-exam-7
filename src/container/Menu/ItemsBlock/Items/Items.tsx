@@ -5,7 +5,7 @@ interface Props {
     name: string,
     price: number,
     image: string,
-    buy?: () => void,
+    buy: () => void,
 }
 
 const Items: React.FC<Props> = ({image, name, price, buy}) => {
