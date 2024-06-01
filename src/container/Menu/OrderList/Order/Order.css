@@ -1,0 +1,38 @@
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid red;
+  padding: 10px 20px 0;
+  margin: 10px 0;
+}
+
+.orderTitle {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.orderCount {
+  font-size: 20px;
+}
+
+.orderPrice {
+  font-size: 20px;
+}
+
+.deleteBtn {
+  border: 1px solid white;
+  border-radius: 5px;
+  background: none;
+  font-size: 25px;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid red;
+    box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.5);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+}

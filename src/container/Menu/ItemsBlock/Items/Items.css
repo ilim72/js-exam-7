@@ -1,0 +1,30 @@
+.item {
+  border: 3px solid red;
+  border-radius: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 30px 10px rgba(255, 0, 0, 0.8),
+    0 0 60px 20px rgba(224, 224, 201, 0.6);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.itemName {
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+
+.itemPrice {
+  font-weight: 600;
+}
+

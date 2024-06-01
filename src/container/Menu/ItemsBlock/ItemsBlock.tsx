@@ -1,5 +1,5 @@
 import React, {PropsWithChildren} from 'react';
-import '../../App/App.css';
+import '../ItemsBlock/ItemsBlock.css';
 
 interface Props extends PropsWithChildren{
     children: React.ReactNode,

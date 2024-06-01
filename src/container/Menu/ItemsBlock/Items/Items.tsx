@@ -1,23 +1,23 @@
 import React from 'react';
-import '../../../App/App.css';
+import '../Items/Items.css';
 
 interface Props {
-    name: string,
-    price: number,
-    image: string,
-    buy: () => void,
+  name: string,
+  price: number,
+  image: string,
+  buy: () => void,
 }
 
 const Items: React.FC<Props> = ({image, name, price, buy}) => {
-    return (
-        <div onClick={buy} className={'item'}>
-            <img width={100} src={image} alt={name}/>
-            <div>
-                <h5>{name}</h5>
-                <span>Price: {price} KGZ</span>
-            </div>
-        </div>
-    );
+  return (
+    <div onClick={buy} className={'item'}>
+      <img width={100} src={image} alt={name}/>
+      <div>
+        <h5 className={'itemName'}>{name}</h5>
+        <span className={'itemPrice'}>Price: {price} KGZ</span>
+      </div>
+    </div>
+  );
 };
 
 export default Items;

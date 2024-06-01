@@ -1,4 +1,5 @@
 import React, {PropsWithChildren} from 'react';
+import '../OrderList/OrderList.css'
 interface Props extends PropsWithChildren{
     children: React.ReactNode,
 }
